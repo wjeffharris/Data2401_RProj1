@@ -1,6 +1,6 @@
 ---
 title: "Hello R"
-author: "Your Name Goes Here"
+author: "William Harris"
 date: "Data 2401"
 output: html_document
 ---
@@ -18,6 +18,19 @@ library(datasauRus)
 ### Exercise 1
 
 (Type your answer to Exercise 1 here. This exercise does not require any R code. **Remove notes like this in the final product that you turn in**)
+``` There are a total of 1846 rows, 2 columns with variable names: "dataset" and "n".
+```
+
+```{r, echo = FALSE}
+library(datasauRus)
+library(dplyr)
+
+datasaurus_dozen %>% 
+  count(dataset) %>% 
+  print(13)
+
+```
+
 
 ### Exercise 2
 
